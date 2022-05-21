@@ -99,7 +99,7 @@ html{
 }
 
 .footer__img__a{
-    color: white;
+    color: rgb(7, 247, 99);
     font-size: 4rem;
     animation-name: insta-logo ;
     animation-iteration-count: infinite;
