@@ -96,6 +96,7 @@ html{
 
 .footer__img{
     width: 10%;
+    animation: F1-logo 4s ease-in-out infinite;
 }
 
 .footer__img__a{
@@ -128,4 +129,11 @@ html{
     0%{ font-size: 4rem;}
     50%{ font-size: 2rem;}
     100%{ font-size: 4rem;}
+}
+
+@keyframes F1-logo{
+    0%{ transform: translateY(0);}
+    50%{ transform: translateY(-25px);}
+    100%{transform: translateY(0);}
+
 }
