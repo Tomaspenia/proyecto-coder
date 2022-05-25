@@ -1,37 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio</title>
-        <link rel="shorcut icon" href="/elementos/header/favicon.png">
-        <link rel="stylesheet" href="/estilos/estilo.css">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos/estilosBootstrap.css">
+  </head>
 
 <body>
 
-    <div class="parent">
+    <div>
 
-        <header class="encabezado">
+        <header class="header">
 
-            <nav class="encabezado__nav">
-
-                <a href="/index.html"><img src="/elementos/header/logo-F1.png" alt="logo" width="100"></a>
-
-                <a href="/index.html" class="encabezado__nav__a">inicio</a>
-                <a href="/paginas/galeria.html" class="encabezado__nav__a">galeria</a>
-                <a href="/paginas/contacto.html" class="encabezado__nav__a">contacto</a>
-                <a href="/paginas/nosotros.html" class="encabezado__nav__a">nosotros</a>
-                <a href="/paginas/MasInfo.html" class="encabezado__nav__a">mas información</a>
-        
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/index.html"><img src="/elementos/header/logo-F1.png" class="w-100px col-1" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                      <a class="nav-link" href="/paginas/galeria.html">Galeria</a>
+                      <a class="nav-link" href="/paginas/contacto.html">Contacto</a>
+                      <a class="nav-link" href="/paginas/nosotros.html">Nosotros</a>
+                      <a class="nav-link" href="/paginas/MasInfo.html">información</a>
+                    </div>
+                  </div>
+                </div>
             </nav>
-
-        </header>
+  
+          </header>
 
         <main class="main">
 
-            <h2>¿Quienes Somos?</h2>
+            <div class="container-fluid p-2 mt-4 mb-4">
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/elementos/imagenes/fans F1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">Somo la pagina de fans de la formula 1 mas gande de latino america, hecha por y para fans.
+                                Contamos con varias sucursales por todo LATAM y la organizacion del evento mas grande de celebracion de la Formula 1 en latino america con invitados especiales cada año.
+                            </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/elementos/imagenes/Productos F1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">En nuestras sucursales podras encontrar desde los productos mas particulares y originales de F1 firmados y autenticados hasta juguetes como fihuras de funko pop, legos, calcomanias, indumentaria, entre muchas cosas y hacemos envios a todos los paises. </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/elementos/imagenes/Prensa F1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">Tambien contamos con todas las ultimas noticias acerca de lo que pasa tanto en la pista como el detras de escena, notas especiales en las cuales las preguntas las hacen ustedes, mandando que les gustaria saber hacerca de las escuderias y sus pilotos a traves del formulario en contacto, animate, tu pregunta puede ser una de las elegidas.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+
+                        
+
+                </div>
+
+            </div>
+
+
+            <!-- <h2>¿Quienes Somos?</h2>
 
             <section class="section__galeria">
 
@@ -50,16 +103,32 @@
                 </div>
 
         
-            </section>
+            </section> -->
 
         </main>
 
-        <footer class="footer">
+        <footer class="bg-dark footer">
 
-            <img src="/elementos/header/logo-F1.png" alt="" class="footer__img">
-            <a href="https://www.instagram.com/f1/" class="footer__img__a" target="_blank"><i class="bi bi-instagram"></i></a>
+            <div class="container-fluid">
+  
+                <div class="row">
+  
+                    <div class="col-xs-12 col-md-6  d-flex justify-content-center align-items-center">
+                        <img src="/elementos/header/logo-F1.png" class="w-100px col-2" alt="">
+                    </div>
+                    <div class="col-xs-12 col-md-6  d-flex justify-content-center align-items-center">
+                        <a href="https://www.instagram.com/f1/" class="fontsize" target="_blank"> 
+                            <i class="bi bi-instagram"></i> 
+                        </a>
+                    </div>
+  
+                </div>
+  
+            </div>
+  
+          </footer>
 
-        </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     </div>
     

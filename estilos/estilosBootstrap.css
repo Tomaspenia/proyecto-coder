@@ -2,26 +2,39 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
 
-.body{
-    height: 100vh;
+.container__grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "main"
+                        "footer"
+   
 }
 .header{
-    width: 100%;
-    height: 10%;
+    grid-area: header;
+
 }
 
 .main{
-    width: 100%;
-    height: 80%;
+    grid-area: main;
 }
 
 .footer{
-    width: 100%;
-    height: 10%;
+    grid-area: footer ;
 }
 .fontsize{
     font-size: 2rem;
+    color: white;
 }
 .imgF1{
     width: 10%;
+}
+
+.img{
+
+    width: 100%;
+    /* filter: grayscale(1) le agregas un filtro a la imagen */
+    border-radius: 10px;
+    height: 100%;
 }
