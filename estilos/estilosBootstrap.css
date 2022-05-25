@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&family=Water+Brush&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
+
+.body{
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 10%;
+}
+
+.main{
+    width: 100%;
+    height: 80%;
+}
+
+.footer{
+    width: 100%;
+    height: 10%;
+}
+.fontsize{
+    font-size: 2rem;
+}
+.imgF1{
+    width: 10%;
+}
