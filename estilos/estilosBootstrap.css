@@ -38,3 +38,6 @@
     border-radius: 10px;
     height: 100%;
 }
+.background{
+    background-image: linear-gradient(to bottom, #b3b3b3, #a1a1a1, #909090, #7f7f7f, #6f6f6f, #6f6f6f, #6f6f6f, #6f6f6f, #7f7f7f, #909090, #a1a1a1, #b3b3b3);
+}
