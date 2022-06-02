@@ -1,0 +1,36 @@
+.container__grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "main"
+                        "footer"
+   
+}
+.header{
+    grid-area: header;
+
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer ;
+}
+.fontsize{
+    font-size: 2rem;
+    color: white;
+}
+.imgF1{
+    width: 10%;
+}
+
+.img{
+
+    width: 100%;
+    /* filter: grayscale(1) le agregas un filtro a la imagen */
+    border-radius: 10px;
+    height: 100%;
+}
