@@ -3,6 +3,7 @@
 .color2 {
   color: #25d366; }
 
+/*maps*/
 .container__grid {
   display: grid;
   grid-template-columns: auto;
@@ -29,12 +30,12 @@
 body {
   background-image: linear-gradient(to bottom, #b3b3b3, #a1a1a1, #909090, #7f7f7f, #6f6f6f, #6f6f6f, #6f6f6f, #6f6f6f, #7f7f7f, #909090, #a1a1a1, #b3b3b3); }
 
+header nav div div div a {
+  font-size: 700; }
+
 main {
   grid-area: main; }
   main div div div img {
-    width: 100%;
-    /* filter: grayscale(1) le agregas un filtro a la imagen */
-    border-radius: 10px;
     height: 100%;
     filter: grayscale(1); }
     main div div div img:hover {
@@ -66,6 +67,9 @@ footer div a {
   footer div a i {
     color: #ff8d4b; }
 
-footer div a {
+.icon, .icon--2 {
   display: inline-block;
   animation: float 4s ease-in-out infinite; }
+
+.icon--2 {
+  animation-delay: 2s; }
