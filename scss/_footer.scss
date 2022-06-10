@@ -1,0 +1,38 @@
+.footer{
+    grid-area: footer ;
+}
+
+.fontsize{
+    font-size: 2rem;
+    color: white;
+}
+
+.icon{
+    display: inline-block;
+    animation: float 4s ease-in-out infinite;
+}
+
+.icon--2{
+    @extend.icon;
+    animation-delay: 2s
+}
+
+.color{
+    color: #ffa875;
+}
+
+.color2{
+    color: #42c773;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px); 
+    }
+    100%{
+        transform: translateY(0); 
+    }
+}

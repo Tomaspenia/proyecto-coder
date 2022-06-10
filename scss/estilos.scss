@@ -2,7 +2,7 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
 
-@import "hojaB";
+@import "footer";
 
 @import "variables";
 
@@ -23,173 +23,37 @@ $font-size: 2rem ;
 
 }
 
-// .main{
-//     grid-area: main;
-// }
-
-// .footer{
-//     grid-area: footer ;
-// }
-.fontsize{
-    color: white;
+.main{
+    grid-area: main;
 }
 
-// .img{
+.imgF1{
+    width: 10%;
+}
 
-//     width: 100%;
-//     /* filter: grayscale(1) le agregas un filtro a la imagen */
-//     border-radius: 10px;
-//     height: 100%;
-// }
-// .background{
-//     background-image: linear-gradient(to bottom, #b3b3b3, #a1a1a1, #909090, #7f7f7f, #6f6f6f, #6f6f6f, #6f6f6f, #6f6f6f, #7f7f7f, #909090, #a1a1a1, #b3b3b3);
-// }
+.img{
+    width: 100%;
+    /* filter: grayscale(1) le agregas un filtro a la imagen */
+    border-radius: 10px;
+    height: 100%;
+}
+.background{
+    background-image: linear-gradient(to bottom, #ffffff, #f5fcff, #defcff, #bffeff, #a5fffe);
+}
 
 .instagram{
     color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); 
 }
-
-// .icon{
-//     display: inline-block;
-//     animation: float 4s ease-in-out infinite;
-// }
-
-
-// .icon2{
-//     display: inline-block; 
-//     animation: float 4s ease-in-out infinite;
-//     animation-delay: 2s
-// }
-
-// .color{
-//      color: #ff8d4b;
-// }
-
-@keyframes float {
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-15px); 
-    }
-    100%{
-        transform: translateY(0); 
-    }
+.efecto{
+    filter: grayscale(0.25);
 }
 
-// .efecto{
-//     filter: grayscale(1);
-// }
-
-// .efecto:hover{
-//     filter: none;
-// }
-
-
-body{
-  
-    background-image: linear-gradient(to bottom, #b3b3b3, #a1a1a1, #909090, #7f7f7f, #6f6f6f, #6f6f6f, #6f6f6f, #6f6f6f, #7f7f7f, #909090, #a1a1a1, #b3b3b3);
-   
-}
-
-header{
-
-    nav{
-
-        div{
-
-            div{
-
-                div{
-
-                    a{
-                        font-size: map-get($fuentes,bold );
-                    }
-                }
-            }
-        }
-    }
-}
-
-main{
-    grid-area: main;
-        div{
-            div{
-
-
-                div{
-
-                    img{
-                        // width: 100%;
-                        // /* filter: grayscale(1) le agregas un filtro a la imagen */
-                        // border-radius: 10px;
-                        // height: 100%;
-
-                        @include background($widthImg,$borderImg,);
-
-                        filter: grayscale(1);
-                        &:hover{ filter: none;}
-                    }
-
-                }
-                div{
-
-                    img{
-                        width: 100%;
-                        /* filter: grayscale(1) le agregas un filtro a la imagen */
-                        border-radius: 10px;
-                        height: 100%;
-                    }
-
-                }
-                div{
-                    img{
-                        width: 100%;
-                        /* filter: grayscale(1) le agregas un filtro a la imagen */
-                        border-radius: 10px;
-                        height: 100%;
-                    }
-
-                }
-                div{
-
-                    img{
-                        width: 100%;
-                        /* filter: grayscale(1) le agregas un filtro a la imagen */
-                        border-radius: 10px;
-                        height: 100%;
-                        filter: grayscale(1);
-                        &:hover{ filter: none;}
-                    }
-
-                }
-            }
-        }
-}
-
-footer{
-    grid-area: footer ;
-}
-
-footer{
-    div{
-        a{
-            font-size: $font-size ;
-
-                i{
-                    color: #ff8d4b;
-                }
-        }
-    }
-}
-
-.icon{
-    display: inline-block;
-    animation: float 4s ease-in-out infinite;
-}
-
-
-.icon--2{
-    @extend.icon;
-    animation-delay: 2s
+.efecto:hover{
+    filter: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
 }
