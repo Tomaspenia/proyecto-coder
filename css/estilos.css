@@ -51,7 +51,7 @@
   height: 100%; }
 
 .background {
-  background-image: linear-gradient(to bottom, #ffffff, #f5fcff, #defcff, #bffeff, #a5fffe); }
+  background-image: linear-gradient(to top, #555555, #6c6c6c, #838383, #9c9c9c, #b5b5b5); }
 
 .instagram {
   color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
@@ -67,3 +67,6 @@
   -ms-transform: scale(1.1);
   transform: scale(1.1);
   z-index: 2; }
+
+.backimg {
+  background-image: url(/elementos/imagenes/fondoForm.jpg); }

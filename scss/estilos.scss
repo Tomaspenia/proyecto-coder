@@ -38,7 +38,7 @@ $font-size: 2rem ;
     height: 100%;
 }
 .background{
-    background-image: linear-gradient(to bottom, #ffffff, #f5fcff, #defcff, #bffeff, #a5fffe);
+    background-image: linear-gradient(to top, #555555, #6c6c6c, #838383, #9c9c9c, #b5b5b5);
 }
 
 .instagram{
@@ -56,4 +56,8 @@ $font-size: 2rem ;
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     z-index: 2;
+}
+
+.backimg {
+    background-image: url(/elementos/imagenes/fondoForm.jpg);
 }
